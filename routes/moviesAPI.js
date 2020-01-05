@@ -10,7 +10,10 @@ const movies = [
       "Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.",
     img_url: "https://i.imgur.com/SN4YgF2.jpg",
     runtime: "103 min",
-    genres: "animation, adventure, comedy"
+    genres: "animation, adventure, comedy",
+    screening_room: "Room 1",
+    showtime_today: "10:00, 13:15, 18:30",
+    showtime_tomorrow: "9:30, 14:00, 19:10"
   },
   {
     _id: { $oid: "5e0ceaf5ee83257a397355a7" },
@@ -21,7 +24,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BM2QyZWRhYWQtNTBkNC00ZGE0LThiODUtNWQ5OWY3ZGQ3ODcyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
     runtime: "110 min",
-    genres: "comedy, drama, musical"
+    genres: "comedy, drama, musical",
+    screening_room: "Room 2",
+    showtime_today: "11:00, 15:15, 20:30",
+    showtime_tomorrow: "10:30, 15:00, 21:10"
   },
   {
     _id: { $oid: "5e0ceb06ee83257a397355a8" },
@@ -32,7 +38,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BNTQ4ZmY0NjgtYzVhNy00NzhiLTk3YTYtNzM1MTdjM2VhZDA3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     runtime: "103 min",
-    genres: "drama, romance, comedy"
+    genres: "drama, romance, comedy",
+    screening_room: "Room 3",
+    showtime_today: "12:00, 16:15, 19:20",
+    showtime_tomorrow: "13:30, 16:00, 20:40"
   },
   {
     _id: { $oid: "5e0cec67ee83257a397355a9" },
@@ -43,7 +52,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_SY1000_SX675_AL_.jpg",
     runtime: "130 min",
-    genres: "crime, comedy, drama"
+    genres: "crime, comedy, drama",
+    screening_room: "Room 4",
+    showtime_today: "10:45, 14:15, 19:50",
+    showtime_tomorrow: "9:30, 15:00, 19:20"
   },
   {
     _id: { $oid: "5e0ced6fee83257a397355aa" },
@@ -54,7 +66,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BMDljNTQ5ODItZmQwMy00M2ExLTljOTQtZTVjNGE2NTg0NGIxXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SY1000_CR0,0,675,1000_AL_.jpg",
     runtime: "142 min",
-    genres: "action, adventure, fantasy"
+    genres: "action, adventure, fantasy",
+    screening_room: "Room 5",
+    showtime_today: "10:10, 14:35, 19:20",
+    showtime_tomorrow: "10:30, 14:00, 19:10"
   },
   {
     _id: { $oid: "5e0cee27ee83257a397355ab" },
@@ -65,7 +80,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BOTVjMmFiMDUtOWQ4My00YzhmLWE3MzEtODM1NDFjMWEwZTRkXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     runtime: "123 min",
-    genres: "action, adventure, comedy"
+    genres: "action, adventure, comedy",
+    screening_room: "Room 6",
+    showtime_today: "13:00, 16:15, 21:20",
+    showtime_tomorrow: "11:30, 15:00, 19:50"
   },
   {
     _id: { $oid: "5e0ceecbee83257a397355ac" },
@@ -76,7 +94,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
     runtime: "135 min",
-    genres: "drama, romance"
+    genres: "drama, romance",
+    screening_room: "Room 7",
+    showtime_today: "12:00, 17:15, 21:30",
+    showtime_tomorrow: "9:50, 13:00, 18:10"
   },
   {
     _id: { $oid: "5e0cef3eee83257a397355ad" },
@@ -87,7 +108,10 @@ const movies = [
     img_url:
       "https://m.media-amazon.com/images/M/MV5BZDhkMjUyYjItYWVkYi00YTM5LWE4MGEtY2FlMjA3OThlYmZhXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SY1000_CR0,0,640,1000_AL_.jpg",
     runtime: "135 min",
-    genres: "mystery, crime, drama"
+    genres: "mystery, crime, drama",
+    screening_room: "Room 8",
+    showtime_today: "10:00, 13:15, 18:30",
+    showtime_tomorrow: "9:30, 14:00, 19:10"
   }
 ];
 
