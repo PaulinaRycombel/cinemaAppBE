@@ -1,17 +1,32 @@
 {
   "name": "moviedb",
   "version": "1.0.0",
-  "description": "movie database",
-  "main": "app.js",
+  "description": "cinema app api",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulinaRycombel/cinemaAppBE.git"
+  },
+  "keywords": [
+    "cinema",
+    "reservations",
+    "app"
+  ],
+  "author": "Paulina Rycombel ,Aldona Tomzik, Marek Szczegodziński",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulinaRycombel/cinemaAppBE/issues"
+  },
+  "homepage": "https://github.com/PaulinaRycombel/cinemaAppBE#readme",
   "dependencies": {
     "body-parser": "*",
     "cors": "^2.8.5",
-    "express": "*",
-    "mongoose": "*"
-  },
-  "author": "Paulina Rycombel",
-  "license": "ISC"
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "mongoose": "^5.8.4"
+  }
 }
