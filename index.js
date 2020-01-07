@@ -5,6 +5,7 @@ const cors = require("cors");
 const tickets = require("./routes/tickets");
 const audithoriums = require("./routes/auditoriums");
 const screenings = require("./routes/screenings");
+const reservations = require("./routes/reservations");
 const moviesAPIRouter = require("./routes/moviesAPI");
 const app = express();
 
@@ -14,6 +15,7 @@ app.use("/movies", moviesAPIRouter);
 app.use("/tickets", tickets);
 app.use("/auditoriums", audithoriums);
 app.use("/screenings", screenings);
+app.use("/reservations", reservations);
 
 const port = process.env.PORT || 5000;
 

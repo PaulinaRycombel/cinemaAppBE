@@ -2,7 +2,7 @@ const Joi = require("joi");
 const mongoose = require("mongoose");
 
 const reservationSchema = new mongoose.Schema({
-  auditorium: {
+  screening: {
     type: new mongoose.Schema({
       name: {
         type: String,
@@ -25,15 +25,17 @@ const reservationSchema = new mongoose.Schema({
 
 const Reservation = mongoose.model("Reservation", reservationSchema);
 
-function validateAudit(reservation) {
+function validateReservation(reservation) {
   const schema = {
-    auditoriumId: Joi.required(),
+    screeningId: Joi.required(),
     seats: Joi.required(),
-    totalPrice: Number.min(1).required()
+    totalPrice: Joi.number()
+      .min(1)
+      .required()
   };
 
   return Joi.validate(reservation, schema);
 }
 
 exports.Reservation = Reservation;
-exports.validate = validateAudit;
+exports.validate = validateReservation;

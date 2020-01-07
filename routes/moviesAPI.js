@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 const { Movie } = require("../models/movie");
 
-const movies = [
+/*const movies = [
   {
     _id: { $oid: "5e0ce55cee83257a397355a6" },
     title: "Frozen II",
@@ -114,7 +114,7 @@ const movies = [
     showtime_today: "10:00, 13:15, 18:30",
     showtime_tomorrow: "9:30, 14:00, 19:10"
   }
-];
+]; */
 
 router.get("/", async (req, res) => {
   const movies = await Movie.find().sort("name");

@@ -2,6 +2,12 @@ const Joi = require("joi");
 const mongoose = require("mongoose");
 
 const screeningSchema = new mongoose.Schema({
+  scrId: {
+    type: String,
+    required: true,
+    unique: true,
+    minlength: 5
+  },
   movie: {
     type: new mongoose.Schema({
       title: {
@@ -37,8 +43,14 @@ const screeningSchema = new mongoose.Schema({
   startTime: {
     type: String,
     required: true
+  },
+
+  date: {
+    type: String,
+    required: true
   }
 });
+screeningSchema.index({ srcId: 1 });
 
 const Screening = mongoose.model("Screening", screeningSchema);
 
@@ -46,7 +58,8 @@ function validateAudit(screening) {
   const schema = {
     movieId: Joi.required(),
     auditoriumId: Joi.required(),
-    startTime: Joi.required()
+    startTime: Joi.required(),
+    date: Joi.required()
   };
 
   return Joi.validate(screening, schema);
