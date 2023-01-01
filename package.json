@@ -23,7 +23,7 @@
   "homepage": "https://github.com/PaulinaRycombel/cinemaAppBE#readme",
   "dependencies": {
     "body-parser": "*",
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "fawn": "^2.1.5",
